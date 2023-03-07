@@ -1,0 +1,214 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column; 
+    background-color: #fffbf8;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li, a{
+    background-color: #fca7a7;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+a:hover{
+    color: #fffbf8;
+}
+
+p{
+    font-family: sunday;
+    font-size: 1.5rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fca7a7;
+    height: 20%;
+    margin-top: 50%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+
+form button{
+    background-color: white;
+    color: #fca7a7;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form button:hover{
+    background-color: #fffbf8;
+    color: #fca7a7;
+}
+
+form input, form textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: white;
+    color: #fca7a7;
+}
+
+form textarea{
+    resize: none;
+    height: 80px;
+}   
+
+input:focus, textarea:focus{
+    outline-color: #fca7a7;
+}
+
+#informacoes{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+#informacoes:hover{
+    color: white;
+}
+
+#navbar{    
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-color: #fca7a7;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#main_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#logo{
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+}
+
+#logo img{
+    min-height: 15%;
+    min-width: 15%;
+    max-height: 20%;
+    max-width: 20%;
+}
+
+
+#cardapio{
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10%;
+}
+
+#cardapio img{
+    min-height: 90%;
+    min-width: 80%;
+    position: relative;
+}
+
+#sobre{
+    width: fit-content;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+.typing{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-effect{
+    width: 100%;
+    animation: typingRight 3s steps(22), effect 0.7s step-end infinite alternate;
+    animation: typingLeft 3s steps(-22), effect 0.7s step-end infinite alternate;
+    overflow: hidden;
+    white-space: normal;  
+    border-right: 3px solid #fca7a7;
+    border-left: 3px solid #fca7a7;
+    font-family: monospace;
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes typingRight{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+@keyframes typingLeft{
+    from{width: 100%;}
+    to{width: 0;}
+}
+
+@keyframes effect{
+    50%{border-color: transparent;}
+}
